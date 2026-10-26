@@ -1,0 +1,32 @@
+{
+  "name": "Ретушь — фоторедактор",
+  "short_name": "Ретушь",
+  "description": "Бесплатный фоторедактор: слои, кисти, штамп, выделение, коррекция и фильтры. Работает без интернета.",
+  "lang": "ru",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "orientation": "any",
+  "background_color": "#1b1d20",
+  "theme_color": "#1b1d20",
+  "categories": ["photo", "graphics", "productivity"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "file_handlers": [
+    {
+      "action": "./",
+      "accept": {
+        "image/png": [".png"],
+        "image/jpeg": [".jpg", ".jpeg"],
+        "image/webp": [".webp"],
+        "image/gif": [".gif"],
+        "application/json": [".json"]
+      }
+    }
+  ]
+}
